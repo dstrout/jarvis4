@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Config and user data — contain API keys, tokens and personal IDs.
+# Each has a committed .example showing the format.
+config.json
+ha_devices.json
+slack_contacts.json
+
+# Runtime data
+memory.db
+memory.db-shm
+memory.db-wal
+conversation_history.json
+
+# Logs
+logs/
+*.log
+
+# Audio artifacts (sounds/ is committed; captured audio is not)
+recordings/
+/*.wav
+
+# Hardware vendor drivers (see docs — not redistributed here)
+reSpeaker_XVF3800_USB_4MIC_ARRAY/
+
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store

@@ -1,0 +1,63 @@
+{
+  "llm": {
+    "provider": "cerebras",
+    "api_key": "",
+    "orchestrator_model": "gpt-oss-120b",
+    "agent_model": "qwen-3-235b-a22b-instruct-2507",
+    "base_url": "https://api.cerebras.ai/v1",
+    "reasoning": true
+  },
+  "asr": {
+    "provider": "whisper-live",
+    "host": "localhost",
+    "port": 9090,
+    "model": "small"
+  },
+  "tts": {
+    "provider": "kokoro-wyoming",
+    "host": "localhost",
+    "port": 10200,
+    "speed": 1.5
+  },
+  "voice": {
+    "wake_word": "hey_jarvis",
+    "wake_threshold": 0.5,
+    "silence_timeout": 1.2,
+    "followup_timeout": 3.0,
+    "vad_threshold": null,
+    "chime": "sounds/chime_correct.wav",
+    "audio_driver": "generic"
+  },
+  "integrations": {
+    "homeassistant": {
+      "enabled": false,
+      "url": "http://homeassistant.local:8123",
+      "token": ""
+    },
+    "slack": {
+      "enabled": false,
+      "bot_token": "",
+      "app_token": ""
+    },
+    "google": {
+      "enabled": false,
+      "oauth_credentials": "~/.config/jarvis4/gcp-oauth.keys.json"
+    }
+  },
+  "email": {
+    "greeting": "",
+    "closing": "Best regards,\nJarvis4"
+  },
+  "contacts": {},
+  "devices": {},
+  "http": {
+    "port": 8787
+  },
+  "mcp_servers": {},
+  "security": {
+    "enable_system_tools": false
+  },
+  "logging": {
+    "level": "INFO"
+  }
+}

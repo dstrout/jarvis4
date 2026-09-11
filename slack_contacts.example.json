@@ -1,0 +1,19 @@
+{
+  "_comment": "Slack contact/channel registry. Copy to slack_contacts.json and edit.",
+  "_comment2": "Channel IDs look like C01ABCDEFGH — find them via the channel's 'Copy link' menu.",
+
+  "people": {
+    "me": {
+      "channel_id": "C01ABCDEFGH",
+      "aliases": ["myself"],
+      "note": "Your DM with the bot"
+    }
+  },
+
+  "channels": {
+    "general": {
+      "channel_id": "C01IJKLMNOP",
+      "aliases": []
+    }
+  }
+}

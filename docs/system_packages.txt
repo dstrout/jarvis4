@@ -1,0 +1,10 @@
+portaudio19-dev
+python3-pyaudio
+libusb-1.0-0-dev
+libavformat-dev
+libavcodec-dev
+libavdevice-dev
+libavutil-dev
+libavfilter-dev
+libswscale-dev
+libswresample-dev

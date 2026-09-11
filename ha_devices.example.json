@@ -1,0 +1,26 @@
+{
+  "_comment": "Home Assistant device registry. Copy to ha_devices.json and edit.",
+  "_comment2": "Each key is the short name the LLM uses. 'entity_id' is the HA entity. 'aliases' help fuzzy matching.",
+
+  "devices": {
+    "office light": {
+      "entity_id": "light.office_main",
+      "type": "light",
+      "room": "office",
+      "aliases": ["office lights", "main office light"],
+      "note": "RGB capable, supports brightness and color"
+    },
+    "desk lamp": {
+      "entity_id": "switch.desk_lamp",
+      "type": "switch",
+      "room": "office",
+      "aliases": ["lamp", "desk light"]
+    },
+    "living room thermostat": {
+      "entity_id": "climate.living_room",
+      "type": "climate",
+      "room": "living room",
+      "aliases": ["thermostat", "heating"]
+    }
+  }
+}

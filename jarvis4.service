@@ -1,0 +1,26 @@
+[Unit]
+Description=Jarvis4 Voice Assistant
+After=network.target sound.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/work/Jarvis4
+Environment="PATH=/home/ubuntu/miniconda3/envs/jarvis/bin:/home/ubuntu/.local/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="PYTHONUNBUFFERED=1"
+# Ensure audio volumes are set to 100% before starting
+ExecStartPre=/usr/bin/amixer -c 0 set Master 100%
+ExecStartPre=/usr/bin/amixer -c 1 set PCM 100%
+ExecStart=/home/ubuntu/miniconda3/envs/jarvis/bin/python3 /home/ubuntu/work/Jarvis4/jarvis4.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+# Give access to audio and USB devices
+SupplementaryGroups=audio plugdev
+
+[Install]
+WantedBy=multi-user.target

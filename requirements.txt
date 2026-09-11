@@ -1,0 +1,29 @@
+# Jarvis4 Voice Assistant - Dependencies
+
+# Voice pipeline
+openwakeword
+pyaudio
+numpy
+scipy                   # Audio resampling for TTS
+websockets
+
+# LLM
+openai                  # AsyncOpenAI client (OpenAI-compatible APIs)
+openai-agents           # OpenAI Agents SDK (multi-agent orchestrator)
+
+# MCP (tool servers)
+mcp
+
+# Agent tools
+httpx                   # Home Assistant REST API
+
+# Optional: Hardware (ReSpeaker XVF3800)
+# pyusb
+# libusb-package
+
+# Optional: Slack integration
+# slack-bolt
+# slack-sdk
+
+# Optional: semantic memory search — see requirements-memory.txt
+# (pulls in torch, ~400MB; memory works without it via keyword search)

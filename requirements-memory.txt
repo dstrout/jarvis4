@@ -1,0 +1,8 @@
+# Optional: long-term memory with semantic search.
+#
+# Pulls in torch (~400MB). Without it Jarvis4 still stores and retrieves
+# memories — search falls back to keyword matching instead of embeddings.
+#
+#   pip install -r requirements-memory.txt
+
+sentence-transformers
